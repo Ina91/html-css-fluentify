@@ -33,6 +33,7 @@ header {
     top :10px;
     text-align: center;
     position: relative;
+    font-weight: bold;
 }
 
 .logo{
