@@ -1,0 +1,142 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content:'';
+    clear:both;
+    display: table;
+}
+
+.container{  /* contenitore principale*/
+    width: 90%;
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+.container.background {
+    background-image: url("https://web.archive.org/web/20200610102604im_/https://www.fluentify.com/bundles/fluentifypublic/images/r4b/01/oldman.png");
+    background-size: cover;
+
+}
+.blu {                                /*sezione blu*/
+    background-color: #0c325a;
+    color:white;
+}
+
+header {
+    color:white;
+    text-transform: uppercase;
+    top :10px;
+    text-align: center;
+    position: relative;
+}
+
+.logo{
+    float: left;
+}
+
+nav {
+    float: left;
+    margin: auto 90px;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+a{                                /*caratteristiche di tutti i link della pagina*/
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+.right-header{                        /*parte destra del header*/
+    position: absolute;
+    float: left;
+    padding:10px 0;
+    right: 0;
+}
+.right-header a {
+    padding: 10px;
+}
+#login{
+    border-radius: 5px;
+    border:1px solid white;
+
+}
+.button{
+    padding:10px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #7fb802;
+    text-transform: uppercase;
+
+}
+.banner {                                /*banner con titolo h1*/
+    width: 50%;
+    padding:100px 0;
+    font-size: 30px;
+}
+
+.grigio{                                /*sezione grigia*/
+    background-color: #f9f9f9;
+}
+
+.intro{
+    text-align: center;
+    padding: 30px;
+}
+p{                                        /*stilizzazione di tutti i paragrafi della pagina*/
+    color: #a599b1;
+    margin-top: 20px;
+}
+
+.bianco{                                 /*sezione bianca*/
+    background-color: white;
+}
+
+.box{                                   /*posizionamento dei tre box uguali*/
+    width: 33.33333%;
+    height:100%;
+    float: left;
+    text-align: center;
+    position: relative;
+
+}
+
+.logo-box{                              /*definizione grandezza del contenitore dell' immagine del box*/
+    height: 200px;
+    padding: 50px;
+
+
+}
+.logo-box img{                         /*definizione grandezza dell'immagini del box*/
+    width: 150px;
+    height: 150px;
+}
+
+.testo-box{
+    padding: 30px;
+}
+
+.testo-box h3{                         /*cambio titolo testo del box */
+    color: #7fb802;
+    padding: 5px;
+    height:60px;
+    font-weight: 900;
+}
+
+.testo-box hr{                /*linea separazione immagine dal testo*/
+
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
