@@ -11,17 +11,14 @@
 }
 
 .container{  /* contenitore principale*/
-    width: 70%;
+    width: 80%;
     margin:0 auto;
     max-width: 1200px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container.background {
-    background-image: url("https://web.archive.org/web/20200610102604im_/https://www.fluentify.com/bundles/fluentifypublic/images/r4b/01/oldman.png");
-    background-size: cover;
 
-}
+/* INIZIO HEADER */
 .blu {                                /*sezione blu*/
     background-color: #0c325a;
     color:white;
@@ -40,7 +37,7 @@ header {
     float: left;
 }
 
-nav {
+nav  {
     float: left;
     margin: auto 90px;
     font-size: 15px;
@@ -62,32 +59,66 @@ nav a:hover{
 
 .right-header{                        /*parte destra del header*/
     position: absolute;
-    float: left;
+    float: right;
     padding:10px 0;
     right: 0;
 }
 .right-header a {
     padding: 10px;
 }
-#login{
-    padding: 8px 25px;
-    border-radius: 5px;
-    border:1px solid white;
-
-}
-.button{
-    padding:10px;
-    border-radius: 5px;
-    font-weight: 700;
-    background-color: #7fb802;
+.btn{
+    color:white;
     text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin:0 10px;
+}
 
+.btn-blue{
+    color: white;
+    border:1px solid #b8e2f2;
+    padding: 5px 20px;
+    background-color:#0c325a;
+}
+
+.btn-green{
+    color: white;
+    /* padding: 5px 10px; */
+    border:1px solid #7cbb02;
+    background-color:#7cbb02;
+}
+
+.btn-big{
+    padding:15px 30px;
+}
+.btn-smoll{
+    padding: 5px 10px;
+}
+
+
+.jumbotron {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.banner img {
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(20%);
 }
 .banner {                                /*banner con titolo h1*/
-    width: 50%;
-    padding:100px 0;
-    font-size: 20px;
+    height: 400px;
+        position: relative;
 }
+
+
+
+/* FINE HEADER */
 
 .grigio{                                /*sezione grigia*/
     background-color: #f9f9f9;
@@ -102,16 +133,17 @@ p{                                        /*stilizzazione di tutti i paragrafi d
     margin-top: 20px;
 }
 
+/* MAIN */
 .bianco{                                 /*sezione bianca*/
     background-color: white;
 }
 
 .box{                                   /*posizionamento dei tre box uguali*/
     width: 33.33333%;
-    height:100%;
     float: left;
     text-align: center;
-    position: relative;
+    /* position: relative; */
+    padding: 20px ;
 
 }
 
@@ -130,16 +162,19 @@ p{                                        /*stilizzazione di tutti i paragrafi d
     padding: 30px;
 }
 
-.testo-box h3{                         /*cambio titolo testo del box */
+.testo-box h3{
+    margin:10px 0;                        /*cambio titolo testo del box */
     color: #7fb802;
-    padding: 5px;
-    height:60px;
+    line-height:30px;
 }
 
 .testo-box hr{                        /*linea separazione immagine dal testo*/
-
     width: 50px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 30px auto;
+    /* position: absolute; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+.testo-box p{
+    margin-top:20px;
 }
